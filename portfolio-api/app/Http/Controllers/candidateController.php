@@ -49,7 +49,7 @@ return [
                     "percentage"=>"70",
                 ]
             ],
-            "project"=>[
+            "projects"=>[
                 [
                     "name"=>"website",
                     "details"=>"details",

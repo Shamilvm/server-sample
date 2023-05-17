@@ -23,7 +23,7 @@ class candidateController extends Controller
 return [
         "data"=>[
             "name"=>$name,
-            "about"=>"about",
+            "about"=>"this is sample website",
             "image"=>"https://www.automatetheplanet.com/wp-content/uploads/2015/06/Test-URL-Redirects-WebDriver.jpg",
             "experiences"=>[
                 [

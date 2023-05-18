@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\candidateController;
+use App\Http\Controllers\getViewController;
 use App\Http\Controllers\viewCountController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,4 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('candidate/{name}',[candidateController::class,'getCandidate'])->name('index');
-Route::get('viewCount/',[viewCountController::class,'getCount'])->name('index');
+Route::get('viewCount',[viewCountController::class,'viewCount'])->name('viewCount');
+Route::get('addCount',[viewCountController::class,'addCount'])->name('addCount');

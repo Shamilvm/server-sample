@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class candidateController extends Controller
 {
-   public function getCandidate($name){
+   public function getCandidate(Request $request, $name){
+    // dd($request->all());
     $data = [];
     if ($name == "shamil"){
         $data = $this->getShamil($name);
@@ -18,6 +19,7 @@ class candidateController extends Controller
     return response()->json($data);
    }
 
+   
 
    private function getRizvan($name){
 return [
